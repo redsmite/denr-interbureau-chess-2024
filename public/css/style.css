@@ -7,6 +7,8 @@
   --black: #2c2c2c;
   --white: #fbfbfb;
   --gray:  #e6efed;
+  --blue:  #004ad6;
+  --green: #279303;
 }
 
 * {
@@ -123,9 +125,16 @@ body {
   border-radius: 8px;
   padding: 10px;
   width: 200px;
-  background-color: #fff;
   margin-bottom: 20px;
   box-shadow: 5px 10px #888888;
+}
+
+.container h3{
+  color: var(--black);
+  background: var(--white);;
+  padding: 0 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
 }
 
 .team-upper,
@@ -134,6 +143,18 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 5px;
+  color: var(--white);
+}
+
+.team-upper{
+  background: var(--blue);
+  border-radius: 10px 10px 0 0;
+}
+
+.team-lower{
+  background: var(--green);
+  border-radius: 0 0 10px 10px;
 }
 
 .team-logo img {
@@ -153,11 +174,11 @@ body {
 
 .team-score {
   font-size: 12px;
-  color: #555;
+  color: var(--white);
   min-height: 30px;
   width: 30px;
   text-align: center;
-  border: 3px solid var(--black);
+  border: 3px solid var(--white);
   border-radius: 4px;
   padding: 5px;
 }
@@ -172,12 +193,23 @@ body {
 
 /* Finals Highlight */
 .final-bracket .container, .bf3rd-bracket .container{
-  background-image: url('images/trophy.png');
-  background-size: cover;      /* This will ensure the image covers the entire div */
-  background-position: center; /* This will center the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */ 
   text-align: center;
   margin-left: 150px;
+}
+
+.final-bracket .container{
+  position: relative;
+  background-image: url('/public/images/trophy.png');
+  background-size: cover;  /* Adjusts the image to cover the whole div */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+}
+
+.round-robin{
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+  padding: 10px;
 }
 
 .rules{
