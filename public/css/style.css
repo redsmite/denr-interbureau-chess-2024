@@ -10,6 +10,7 @@
   --blue:  #004ad6;
   --green: #279303;
   --gold:  #efab3a;
+  --red:   #830b0a;
 }
 
 * {
@@ -206,8 +207,12 @@ body {
   background-repeat: no-repeat; /* Prevents repeating the image */
 }
 
-.champion .team-upper{
+.champion .team-upper, .final-bracket .team-upper, .final-bracket .team-lower{
   background: var(--gold);
+}
+
+.bf3rd-bracket .team-upper, .bf3rd-bracket .team-lower{
+  background: var(--red);
 }
 
 .round-robin{
