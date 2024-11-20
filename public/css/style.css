@@ -9,6 +9,7 @@
   --gray:  #e6efed;
   --blue:  #004ad6;
   --green: #279303;
+  --gold:  #efab3a;
 }
 
 * {
@@ -129,12 +130,12 @@ body {
   box-shadow: 5px 10px #888888;
 }
 
-.container h3{
+.container h1{
   color: var(--black);
-  background: var(--white);;
-  padding: 0 5px;
+  background: var(--white);
+  padding: 0 25px;
   margin-bottom: 5px;
-  border-radius: 10px;
+  font-size: 20px;
 }
 
 .team-upper,
@@ -192,17 +193,21 @@ body {
 }
 
 /* Finals Highlight */
-.final-bracket .container, .bf3rd-bracket .container{
+.final-bracket .container, .bf3rd-bracket .container, .champion .container{
   text-align: center;
   margin-left: 150px;
 }
 
-.final-bracket .container{
+.final-bracket .container, .champion .container{
   position: relative;
   background-image: url('/public/images/trophy.png');
   background-size: cover;  /* Adjusts the image to cover the whole div */
   background-position: center;  /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating the image */
+}
+
+.champion .team-upper{
+  background: var(--gold);
 }
 
 .round-robin{
@@ -235,15 +240,15 @@ body {
     width: 100%;
   }
 
-  .schedule img{
-    width: 75%;
+  .hero-content h1{
+    max-width: 100%;
   }
 
   .container {
     width: 90%;
   }
-  .final-bracket .container, .bf3rd-bracket .container{
-    margin-left: 0;
+  .final-bracket .container, .bf3rd-bracket .container, .champion .container{
+    margin-left: 10%;
   }
   .crossover {
     display: block;             /* Switch to block layout on small screens */
@@ -257,4 +262,9 @@ body {
   .rules{
     text-align: left;
   }
+  
+  .schedule img, .top-result img, .result-cross img, .top-performer img{
+    width: 95%;
+  }
+
 }
