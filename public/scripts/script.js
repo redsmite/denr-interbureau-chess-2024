@@ -9,7 +9,8 @@ const countdownInterval = setInterval(() => {
   if (timeDifference <= 0) {
     // Countdown complete
     clearInterval(countdownInterval);
-    document.getElementById("countdown").innerHTML = "The event has started!";
+    document.getElementById("countdown").innerHTML = `<a href="https://flipsimu.com/" target="_blank" class="custom-link-btn">TOSS COIN</a>
+`;
     return;
   }
 
