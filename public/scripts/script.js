@@ -1,5 +1,5 @@
 // Target date and time: November 26, 2024, 9:30 AM
-const targetDate = new Date("November 26, 2024 09:30:00").getTime();
+const targetDate = new Date("November 28, 2024 09:30:00").getTime();
 
 // Update the countdown every second
 const countdownInterval = setInterval(() => {
